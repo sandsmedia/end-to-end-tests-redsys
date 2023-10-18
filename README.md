@@ -1,6 +1,3 @@
-# end-to-end-tests-redsys
-CodeCeptJS end to end tests for Redsys
-
 # <a name="_pbdx6w3k04"></a>**CodeceptJS Acceptance Testing Project**
 This repository contains an acceptance testing project created using[ ](https://codecept.io/)[CodeceptJS](https://codecept.io/), a popular JavaScript testing framework that allows you to write end-to-end tests in a simple and efficient manner.
 ## <a name="_ipqxyr2l12ys"></a>**Getting Started**
@@ -12,43 +9,42 @@ Follow these instructions to set up the project and run the acceptance tests loc
 ### <a name="_rphizysdxd75"></a>**Installation**
 Clone the repository to your local machine.
 
-https://github.com/your-username/your-codeceptjs-project.git
+https://github.com/your-username/your-codeceptjs-project.git
 
-
+
 
 Navigate to the project folder.
 
-cd your-codeceptjs-project
+cd your-codeceptjs-project
 
-
+
 
 Install project dependencies using npm.
 
-npm install
+npm install
 
-
 ### <a name="_flfakmdg7lwm"></a>**Configuration**
 Configure your test environments by editing codecept.conf.js. Make sure you have the required WebDriver helper set up. You can use[ ](https://codecept.io/helpers/Playwright)[Playwright](https://codecept.io/helpers/Playwright) or[ ](https://codecept.io/helpers/Puppeteer)[Puppeteer](https://codecept.io/helpers/Puppeteer) as WebDriver helpers. Puppeteer was used for this project.
 
 If you want to use any additional helpers (e.g.,[ ](https://codecept.io/helpers/REST)[REST](https://codecept.io/helpers/REST)), add them to the configuration file and install them using npm. For example:
 
-npm install @codeceptjs/rest
+npm install @codeceptjs/rest
 
-
+
 
 Define your test scenarios in the \*\_test.js files under the tests directory. Modify these files according to your application's test cases.
 ### <a name="_m5sv4om2gowd"></a>**Running Tests**
 Before running the tests, please make sure you are using the latest version of Node. Version used for this project is version 20.6.0.
 
-nvm use 20.6.0
+nvm use 20.6.0
 
-
+
 
 To run the acceptance tests, execute the following command:
 
-npx codeceptjs run --steps --verbose
+npx codeceptjs run --steps
 
-
+
 
 This command will execute all the test scenarios defined in your project. The --steps flag will display detailed steps of the test execution.
 ### <a name="_c1cycoai8yn9"></a>**Test Reports**
